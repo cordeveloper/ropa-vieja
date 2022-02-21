@@ -1,0 +1,38 @@
+.product__thumbnail{
+    background-color: #fff;
+    cursor: pointer;
+}
+.product__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    position: relative;
+    img{
+        width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
+.product__footer{
+    padding: 0 1rem;
+}
+
+.product__price{
+    font-weight: bold;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.product__category{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: grey;
+}
+
+
+

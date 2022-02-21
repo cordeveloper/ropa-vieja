@@ -1,0 +1,14 @@
+.navbar__container {
+    background-color: #F23D4C;
+    height: 60px;
+    .container{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navbar__title{
+    padding-right: 2rem;
+}

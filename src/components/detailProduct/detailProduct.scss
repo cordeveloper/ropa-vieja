@@ -1,0 +1,35 @@
+.detailProduct {
+    background-color: #fff;
+    padding: 2rem 6rem;
+    margin: 2rem 0;
+
+
+    img{
+        max-width: 60%;
+    }
+}
+
+.detailProduct__display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 6rem 0;
+}
+
+.detailProduct__title{
+    margin: 0;
+}
+
+.detailProduct__subtitle{
+    font-weight: normal;
+    color: grey;
+    margin: 0;
+}
+
+.detailProduct__price {
+    font-weight: bold;
+    font-size: 4rem;
+    span{
+        font-size: 2rem;
+    }
+}

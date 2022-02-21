@@ -1,0 +1,16 @@
+.cart__container{
+    padding-left: 2rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.cart__indicator{
+    background-color: #000;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}

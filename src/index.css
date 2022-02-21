@@ -5,9 +5,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgrey;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.relative{
+  position: relative;
+}
+
+.button-buy{
+  background-color: #F2AE2E;
+  border: none;
+  box-shadow: none;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-buy:hover{
+  outline: 0;
+  color: #fff;
 }

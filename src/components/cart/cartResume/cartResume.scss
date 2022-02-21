@@ -1,0 +1,28 @@
+.cartResume{
+    background-color: #fff;
+    padding: 2rem 6rem;
+    margin: 2rem 0
+}
+
+.cartResume__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    img{
+        width: 62px;
+        padding-right: 2rem;
+    }
+}
+
+.cartResume__line{
+    flex:1;
+    border-bottom: 1px dashed;
+    margin: 0 1rem;
+}
+
+.cartResume__price{
+    font-weight: bold;
+    font-Size: 1.3rem;
+}
+

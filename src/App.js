@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/navbar/navbar";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/home";
+import Detail from "./pages/detail";
+import { useEffect } from "react";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { fetchProducts } from "./state/actions";
+import Cart from "./pages/cart";
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect( () => {
+    axios.get('https://fakestoreapi.com/products')
+    .then(
+      response => dispatch(fetchProducts(response.data)))
+    .catch(error => console.log(error));
+  }, [] );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/product/:id" element={<Detail/>} />
+            <Route path="/cart" element={<Cart/>} />
+          </Routes>
+      </Router>
     </div>
   );
 }
